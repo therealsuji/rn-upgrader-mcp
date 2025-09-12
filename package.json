@@ -1,0 +1,23 @@
+{
+  "name": "rn-upgrader-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for React Native project upgrading",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --external @modelcontextprotocol/sdk --external xcode",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "xcode": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
